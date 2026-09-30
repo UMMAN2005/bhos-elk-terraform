@@ -1,0 +1,35 @@
+# VCD connection
+vcd_user     = "your-vcd-username"
+vcd_password = "YOUR_SECURE_PASSWORD"
+vcd_org      = "your-organization"
+vcd_vdc      = "your-vdc-name"
+vcd_url      = "https://vcloud.example.com/api"
+
+# Existing VCD resources
+org_network_name = "your-org-network"
+storage_profile  = "your-storage-profile"
+catalog_name     = "devops-catalog"
+
+# VM configuration
+vapp_name    = "bhos-elk-systems"
+vm_name      = "BHOSElk01"
+hostname     = "kibana"
+# Set an assigned lab address.
+vm_ip        = "192.0.2.50"
+vm_cpus      = 8
+vm_cpu_cores = 1
+vm_memory    = 16384
+vm_disk_size = 61440
+environment  = "bhos"
+
+# Access
+domain               = "example.com"
+hashed_pass          = "YOUR_SHA512_HASHED_PASS"
+ssh_public_key       = "REPLACE_WITH_YOUR_PUBLIC_SSH_KEY"
+ssh_private_key_path = "~/.ssh/id_rsa"
+
+# Optional TLS certificate and key, encoded as base64.
+use_custom_tls = false
+domain_crt      = ""
+domain_key      = ""
+domain_root_crt = ""

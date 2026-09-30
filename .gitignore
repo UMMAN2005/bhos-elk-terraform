@@ -1,0 +1,58 @@
+# Terraform
+**/.terraform/*
+.terraform/
+
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+tfplan
+*tfplan*
+*.tfplan
+
+crash.log
+crash.*.log
+
+# Local configuration
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+
+# VM image
+files/ova/*.ova
+!files/ova/.gitkeep
+
+# Certificates and SSH keys
+files/elk/*.crt
+files/elk/*.key
+*.crt
+*.key
+*.p12
+*.pem
+*.pfx
+*.p8
+*.jks
+id_rsa
+id_ed25519
+*.pub
+
+# Credentials and logs
+.env
+.env.*
+!.env.example
+credentials*
+ELK_ACCESS_DETAILS.txt
+*.log
+*.bak
+*.tmp
+/Screenshot*.png
+/private/
+
+# Local tools and editor files
+.venv/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+~$*.docx
+.DS_Store
